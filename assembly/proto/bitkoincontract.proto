@@ -1,0 +1,127 @@
+syntax = "proto3";
+
+package bitkoincontract;
+
+import "koinos/options.proto"; 
+
+message empty_message {}
+
+message uint64 {
+   uint64 value = 1 [jstype = JS_STRING];
+}
+
+// @description Returns the token's name
+// @read-only true
+message name_arguments {}
+
+message name_result {
+   string value = 1;
+}
+
+// @description Returns the token's symbol
+// @read-only true
+message symbol_arguments {}
+
+message symbol_result {
+   string value = 1;
+}
+
+// @description Returns the token's decimals precision
+// @read-only true
+message decimals_arguments {}
+
+message decimals_result {
+   uint32 value = 1;
+}
+
+// @description Returns the token's total supply
+// @read-only true
+message total_supply_arguments {}
+
+message total_supply_result {
+   uint64 value = 1 [jstype = JS_STRING];
+}
+
+// @description Checks the balance at an address
+// @read-only true
+message balance_of_arguments {
+   bytes owner = 1 [(koinos.btype) = ADDRESS];
+}
+
+message balance_of_result {
+   uint64 value = 1 [jstype = JS_STRING];
+}
+
+// @description Get balance of an account2 
+// @read-only true
+message allowance_arguments {
+   bytes owner = 1 [(koinos.btype) = ADDRESS];
+   bytes spender = 2 [(koinos.btype) = ADDRESS];
+ }
+
+ message allowance_result {
+   uint64 value = 1 [jstype = JS_STRING];
+ }
+
+// @description Approve tokens
+// @read-only false
+// @result empty_message
+message approve_arguments {
+   bytes owner = 1 [(koinos.btype) = ADDRESS];
+   bytes spender = 2 [(koinos.btype) = ADDRESS];
+   uint64 value = 3 [jstype = JS_STRING];
+ }
+
+// @description Transfers the token
+// @read-only false
+// @result empty_message
+message transfer_arguments {
+   bytes from = 1 [(koinos.btype) = ADDRESS];
+   bytes to = 2 [(koinos.btype) = ADDRESS];
+   uint64 value = 3 [jstype = JS_STRING];
+}
+
+// @description Mints the token
+// @read-only false
+// @result empty_message
+message mint_arguments {
+   bytes to = 1 [(koinos.btype) = ADDRESS];
+   uint64 value = 2 [jstype = JS_STRING];
+}
+
+// @description Burns the token
+// @read-only false
+// @result empty_message
+message burn_arguments {
+   bytes from = 1 [(koinos.btype) = ADDRESS];
+   uint64 value = 2 [jstype = JS_STRING];
+}
+
+
+message balance_object {
+   uint64 value = 1 [jstype = JS_STRING];
+}
+
+message mint_event {
+   bytes to = 1 [(koinos.btype) = ADDRESS];
+   uint64 value = 2 [jstype = JS_STRING];
+}
+
+message burn_event {
+   bytes from = 1 [(koinos.btype) = ADDRESS];
+   uint64 value = 2 [jstype = JS_STRING];
+}
+
+message transfer_event {
+   bytes from = 1 [(koinos.btype) = ADDRESS];
+   bytes to = 2 [(koinos.btype) = ADDRESS];
+   uint64 value = 3 [jstype = JS_STRING];
+   uint64 from_balance = 4 [jstype = JS_STRING];
+   uint64 to_balance = 5 [jstype = JS_STRING];
+}
+
+message approve_event {
+   bytes owner = 1 [(koinos.btype) = ADDRESS];
+   bytes spender = 2 [(koinos.btype) = ADDRESS];
+   uint64 value = 3 [jstype = JS_STRING];
+}

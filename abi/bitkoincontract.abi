@@ -1,0 +1,75 @@
+{
+    "methods": {
+        "name": {
+            "argument": "bitkoincontract.name_arguments",
+            "return": "bitkoincontract.name_result",
+            "description": "Returns the token's name",
+            "entry-point": "0x82a3537f",
+            "read-only": true
+        },
+        "symbol": {
+            "argument": "bitkoincontract.symbol_arguments",
+            "return": "bitkoincontract.symbol_result",
+            "description": "Returns the token's symbol",
+            "entry-point": "0xb76a7ca1",
+            "read-only": true
+        },
+        "decimals": {
+            "argument": "bitkoincontract.decimals_arguments",
+            "return": "bitkoincontract.decimals_result",
+            "description": "Returns the token's decimals precision",
+            "entry-point": "0xee80fd2f",
+            "read-only": true
+        },
+        "total_supply": {
+            "argument": "bitkoincontract.total_supply_arguments",
+            "return": "bitkoincontract.total_supply_result",
+            "description": "Returns the token's total supply",
+            "entry-point": "0xb0da3934",
+            "read-only": true
+        },
+        "balance_of": {
+            "argument": "bitkoincontract.balance_of_arguments",
+            "return": "bitkoincontract.balance_of_result",
+            "description": "Checks the balance at an address",
+            "entry-point": "0x5c721497",
+            "read-only": true
+        },
+        "allowance": {
+            "argument": "bitkoincontract.allowance_arguments",
+            "return": "bitkoincontract.allowance_result",
+            "description": "Get balance of an account2",
+            "entry-point": "0x32f09fa1",
+            "read-only": true
+        },
+        "approve": {
+            "argument": "bitkoincontract.approve_arguments",
+            "return": "bitkoincontract.empty_message",
+            "description": "Approve tokens",
+            "entry-point": "0x74e21680",
+            "read-only": false
+        },
+        "transfer": {
+            "argument": "bitkoincontract.transfer_arguments",
+            "return": "bitkoincontract.empty_message",
+            "description": "Transfers the token",
+            "entry-point": "0x27f576ca",
+            "read-only": false
+        },
+        "mint": {
+            "argument": "bitkoincontract.mint_arguments",
+            "return": "bitkoincontract.empty_message",
+            "description": "Mints the token",
+            "entry-point": "0xdc6f17bb",
+            "read-only": false
+        },
+        "burn": {
+            "argument": "bitkoincontract.burn_arguments",
+            "return": "bitkoincontract.empty_message",
+            "description": "Burns the token",
+            "entry-point": "0x859facc5",
+            "read-only": false
+        }
+    },
+    "types": "CvcKCiRhc3NlbWJseS9wcm90by9iaXRrb2luY29udHJhY3QucHJvdG8SD2JpdGtvaW5jb250cmFjdBoUa29pbm9zL29wdGlvbnMucHJvdG8iDwoNZW1wdHlfbWVzc2FnZSIiCgZ1aW50NjQSGAoFdmFsdWUYASABKARCAjABUgV2YWx1ZSIQCg5uYW1lX2FyZ3VtZW50cyIjCgtuYW1lX3Jlc3VsdBIUCgV2YWx1ZRgBIAEoCVIFdmFsdWUiEgoQc3ltYm9sX2FyZ3VtZW50cyIlCg1zeW1ib2xfcmVzdWx0EhQKBXZhbHVlGAEgASgJUgV2YWx1ZSIUChJkZWNpbWFsc19hcmd1bWVudHMiJwoPZGVjaW1hbHNfcmVzdWx0EhQKBXZhbHVlGAEgASgNUgV2YWx1ZSIYChZ0b3RhbF9zdXBwbHlfYXJndW1lbnRzIi8KE3RvdGFsX3N1cHBseV9yZXN1bHQSGAoFdmFsdWUYASABKARCAjABUgV2YWx1ZSIyChRiYWxhbmNlX29mX2FyZ3VtZW50cxIaCgVvd25lchgBIAEoDEIEgLUYBlIFb3duZXIiLQoRYmFsYW5jZV9vZl9yZXN1bHQSGAoFdmFsdWUYASABKARCAjABUgV2YWx1ZSJRChNhbGxvd2FuY2VfYXJndW1lbnRzEhoKBW93bmVyGAEgASgMQgSAtRgGUgVvd25lchIeCgdzcGVuZGVyGAIgASgMQgSAtRgGUgdzcGVuZGVyIiwKEGFsbG93YW5jZV9yZXN1bHQSGAoFdmFsdWUYASABKARCAjABUgV2YWx1ZSJpChFhcHByb3ZlX2FyZ3VtZW50cxIaCgVvd25lchgBIAEoDEIEgLUYBlIFb3duZXISHgoHc3BlbmRlchgCIAEoDEIEgLUYBlIHc3BlbmRlchIYCgV2YWx1ZRgDIAEoBEICMAFSBXZhbHVlIl4KEnRyYW5zZmVyX2FyZ3VtZW50cxIYCgRmcm9tGAEgASgMQgSAtRgGUgRmcm9tEhQKAnRvGAIgASgMQgSAtRgGUgJ0bxIYCgV2YWx1ZRgDIAEoBEICMAFSBXZhbHVlIkAKDm1pbnRfYXJndW1lbnRzEhQKAnRvGAEgASgMQgSAtRgGUgJ0bxIYCgV2YWx1ZRgCIAEoBEICMAFSBXZhbHVlIkQKDmJ1cm5fYXJndW1lbnRzEhgKBGZyb20YASABKAxCBIC1GAZSBGZyb20SGAoFdmFsdWUYAiABKARCAjABUgV2YWx1ZSIqCg5iYWxhbmNlX29iamVjdBIYCgV2YWx1ZRgBIAEoBEICMAFSBXZhbHVlIjwKCm1pbnRfZXZlbnQSFAoCdG8YASABKAxCBIC1GAZSAnRvEhgKBXZhbHVlGAIgASgEQgIwAVIFdmFsdWUiQAoKYnVybl9ldmVudBIYCgRmcm9tGAEgASgMQgSAtRgGUgRmcm9tEhgKBXZhbHVlGAIgASgEQgIwAVIFdmFsdWUipAEKDnRyYW5zZmVyX2V2ZW50EhgKBGZyb20YASABKAxCBIC1GAZSBGZyb20SFAoCdG8YAiABKAxCBIC1GAZSAnRvEhgKBXZhbHVlGAMgASgEQgIwAVIFdmFsdWUSJQoMZnJvbV9iYWxhbmNlGAQgASgEQgIwAVILZnJvbUJhbGFuY2USIQoKdG9fYmFsYW5jZRgFIAEoBEICMAFSCXRvQmFsYW5jZSJlCg1hcHByb3ZlX2V2ZW50EhoKBW93bmVyGAEgASgMQgSAtRgGUgVvd25lchIeCgdzcGVuZGVyGAIgASgMQgSAtRgGUgdzcGVuZGVyEhgKBXZhbHVlGAMgASgEQgIwAVIFdmFsdWViBnByb3RvMw=="
+}
